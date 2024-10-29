@@ -1,0 +1,18 @@
+Fitted Parameters:
+Alpha: 0.5916
+A: 1100.0000
+Epsilon_0: 0.0000
+n: 0.0355
+K0: 600.0000
+Q: 300.0000
+Beta: 41.0031
+
+Error Metrics:
+MSE: 1477.1975
+RMSE: 38.4343
+MAE: 14.0349
+R-squared: 0.8279
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1100, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
