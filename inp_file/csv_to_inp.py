@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Define the paths
-csv_path = r'inp_file\new\Tmp673.15K_StrRt0.0001_ver1.csv'
-output_inp_path = r'inp_file\new\Material_DP1000_TxK_SRy.inp'
+csv_path = r'inp_file\new\Tmp673.15K_StrRt0.0001_ver2_adjusted.csv'
+output_inp_path = r'inp_file\new\Material_DP1000_TxK_SRy_ver2.inp'
 
 # Read the CSV file and strip leading/trailing spaces from column names
 data = pd.read_csv(csv_path)
@@ -27,9 +27,9 @@ header = f"""** MATERIALS
 *Material, name=DP1000
 *Depvar
      2,
-*User Material, constants={len(data.columns) * len(data)}
+*User Material, constants=3176
 ** Young's Modulus, Poisson Ratio
- 210000,        0.3,          0.0,         0.0,            0.0,            0.0,         0.0,   0.
+ 200000,        0.3,          0.0,         0.0,            0.0,            0.0,         0.0,   0.
 ** Flow curves along 0, 45, 90 and biaxial; r-values along 0, 45 and 90
 """
 
