@@ -5,7 +5,7 @@ import pandas as pd
 
 
 file_path = r'Temperature_calibration\Fitted_FC_TmpDpn_RD.xlsx'
-sheet_name = 'StrRt0.0001' 
+sheet_name = 'StrRt0.001' 
 output_file_path = f'Temperature_calibration\Fitted_FC_TmpDpn_RD_{sheet_name}_ref.csv'
 df = pd.read_excel(file_path, sheet_name=sheet_name)
 
