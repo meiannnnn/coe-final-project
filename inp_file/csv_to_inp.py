@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Define the paths
-csv_path = r'inp_file\new\Tmp673.15K_StrRt0.0001_ver2_adjusted.csv'
-output_inp_path = r'inp_file\new\Material_DP1000_TxK_SRy_ver2.inp'
+csv_path = r'inp_file\new\Tmp673.15K_StrRt0.0001_ver5.csv'
+output_inp_path = r'inp_file\new\Material_DP1000_TxK_SRy_ver5.inp'
 
 # Read the CSV file and strip leading/trailing spaces from column names
 data = pd.read_csv(csv_path)
