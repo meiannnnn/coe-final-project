@@ -102,3 +102,44 @@ R-squared: 0.9550
 initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
 bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1145, 0.02, 0.5, 600, 300, 100])
 weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
+
+--VER6: Max = 1180
+Fitted Parameters:
+Alpha: 0.8183
+A: 1155.0000
+Epsilon_0: 0.0000
+n: 0.0668
+K0: 600.0000
+Q: 300.0000
+Beta: 79.1853
+
+Error Metrics:
+MSE: 285.5195
+RMSE: 16.8973
+MAE: 5.8130
+R-squared: 0.9667
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1155, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
+
+
+--VER 7: Max = 1178
+Fitted Parameters:
+Alpha: 0.8198
+A: 1153.0000
+Epsilon_0: 0.0000
+n: 0.0662
+K0: 600.0000
+Q: 300.0000
+Beta: 76.7533
+
+Error Metrics:
+MSE: 302.9089
+RMSE: 17.4043
+MAE: 6.0578
+R-squared: 0.9647
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1153, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
