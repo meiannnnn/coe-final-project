@@ -1,0 +1,64 @@
+--ORIGINAL: Max = 1342
+
+--VER1: Max= 1335
+Fitted Parameters:
+Alpha: 1.0000
+A: 1260.0000
+Epsilon_0: 0.0000
+n: 0.0531
+K0: 539.3754
+Q: 300.0000
+Beta: 0.1965
+
+Error Metrics:
+MSE: 1161.3439
+RMSE: 34.0785
+MAE: 22.1251
+R-squared: 0.8490
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1260, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
+
+--VER2: Max= 1337
+Fitted Parameters:
+Alpha: 1.0000
+A: 1261.0000
+Epsilon_0: 0.0000
+n: 0.0533
+K0: 600.0000
+Q: 300.0000
+Beta: 68.0005
+
+Error Metrics:
+MSE: 1139.7469
+RMSE: 33.7601
+MAE: 21.9095
+R-squared: 0.8518
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1261, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
+
+
+--VER3: Max= 1340
+Fitted Parameters:
+Alpha: 1.0000
+A: 1263.0000
+Epsilon_0: 0.0000
+n: 0.0538
+K0: 429.5828
+Q: 117.8428
+Beta: 58.0778
+
+Error Metrics:
+MSE: 1096.6240
+RMSE: 33.1153
+MAE: 21.4670
+R-squared: 0.8574
+
+initial_guess = [0.5, 900, 0.005, 0.15, 450, 100, 15]
+bounds = ([1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10, 1e-10], [1.0, 1263, 0.02, 0.5, 600, 300, 100])
+weights = 1 / (strain + 0.01) ** 2  # Experiment with the exponent for better fit
+
+
