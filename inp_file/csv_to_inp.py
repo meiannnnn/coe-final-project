@@ -17,9 +17,9 @@ rd = data['RD']
 dd = data['DD']
 td = data['TD']
 biaxial = data['biaxial']
-r_0 = data['r_TD']
+r_0 = data['r_RD']
 r_45 = data['r_DD']
-r_90 = data['r_RD']
+r_90 = data['r_TD']
 
 # Create the header for the .inp file
 header = f"""** MATERIALS
